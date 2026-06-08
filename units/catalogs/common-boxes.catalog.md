@@ -2,7 +2,7 @@
 mbox_unit: 1
 unit: common-boxes
 type: catalog
-version: 1
+version: 2
 uses:
   catalog: 1
   display: 3
@@ -23,8 +23,8 @@ A discovery index of reusable boxes available for application composition.
 
 ```yaml
 scope:
-  description: All reusable box units stored beneath /common.
-  pathPrefix: /common
+  description: All reusable box units stored beneath /units/common.
+  pathPrefix: /units/common
   unitTypes: [box]
   coverage: complete
 catalog:

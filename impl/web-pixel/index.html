@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBOX Web Pixel World</title>
+    <link rel="stylesheet" href="framework/styles.css">
+  </head>
+  <body>
+    <header class="world-toolbar">
+      <div>
+        <p class="eyebrow">MBOX web-pixel</p>
+        <h1>World</h1>
+      </div>
+      <nav id="app-controls" class="app-controls" aria-label="App activation"></nav>
+      <button id="add-pills" class="world-action" type="button">add pills</button>
+      <button id="reset-world" class="world-action" type="button">reset</button>
+      <button id="turbo-world" class="world-action" type="button" aria-pressed="false">turbo</button>
+      <div id="tick-readout" class="tick-readout" aria-live="polite">tick 0</div>
+    </header>
+    <main class="world-stage" aria-label="Web pixel world">
+      <div id="world" class="world" role="img" aria-label="200 by 150 pixel world"></div>
+    </main>
+    <script src="framework/apps.js"></script>
+    <script src="framework/world.js"></script>
+    <script src="framework/root.js"></script>
+  </body>
+</html>

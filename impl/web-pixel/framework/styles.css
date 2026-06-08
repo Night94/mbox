@@ -1,0 +1,171 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --panel: #050505;
+  --text: #f8f8f8;
+  --muted: #a8a8a8;
+  --line: #242424;
+  --focus: #7dd3fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.world-toolbar {
+  align-items: center;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 1fr auto auto auto auto;
+  min-height: 64px;
+  padding: 10px 14px;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0;
+}
+
+.app-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+
+.app-panel {
+  align-items: stretch;
+  display: grid;
+  gap: 4px;
+  min-width: 92px;
+}
+
+.power-readout {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+}
+
+.app-toggle {
+  background: #101010;
+  border: 1px solid var(--line);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  min-height: 36px;
+  padding: 0 12px;
+}
+
+.world-action {
+  background: #101010;
+  border: 1px solid var(--line);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  min-height: 36px;
+  padding: 0 12px;
+}
+
+.app-toggle[aria-pressed="true"] {
+  background: #f8f8f8;
+  border-color: #f8f8f8;
+  color: #000;
+}
+
+.world-action[aria-pressed="true"] {
+  background: var(--focus);
+  border-color: var(--focus);
+  color: #000;
+}
+
+.app-toggle:focus-visible,
+.world-action:focus-visible {
+  border-color: var(--focus);
+  outline: none;
+}
+
+.tick-readout {
+  color: var(--muted);
+  font-size: 13px;
+  min-width: 80px;
+  text-align: right;
+}
+
+.world-stage {
+  background: #000;
+  height: calc(100vh - 64px);
+  overflow: auto;
+  width: 100vw;
+}
+
+.world {
+  background: #000;
+  position: relative;
+}
+
+.world-pixel {
+  background: #fff;
+  position: absolute;
+}
+
+.look-overlay {
+  animation: look-fade 1s ease-out forwards;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 18px currentColor;
+  opacity: 0.45;
+  pointer-events: none;
+  position: absolute;
+}
+
+@keyframes look-fade {
+  from {
+    opacity: 0.45;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow: auto;
+  }
+
+  .world-toolbar {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .tick-readout {
+    text-align: left;
+  }
+
+  .world-stage {
+    height: calc(100vh - 142px);
+  }
+}
