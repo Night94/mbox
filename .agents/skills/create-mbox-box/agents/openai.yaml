@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create MBOX Box"
+  short_description: "Create a spec-led reusable MBOX box"
+  default_prompt: "Use $create-mbox-box to create a new reusable box for this repository."

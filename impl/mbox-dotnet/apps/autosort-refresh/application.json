@@ -1,0 +1,8 @@
+{
+  "runtime.defaultMsgTimeoutMs": 600000,
+  "runtime.destroyTimeoutMs": 5000,
+  "runtime.logLateResponses": false,
+  "runtime.sendRemoteExceptionStacks": false,
+  "autosort.sourceApplicationConfig": "apps/imap-test/application.json",
+  "autosort.rootFolder": "INBOX.autosort"
+}

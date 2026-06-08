@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain MBOX Integrity"
+  short_description: "Audit and repair MBOX unit integrity"
+  default_prompt: "Use $maintain-mbox-integrity to evaluate stale units and repair catalog or dependency inconsistencies."

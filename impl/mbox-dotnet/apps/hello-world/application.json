@@ -1,0 +1,6 @@
+{
+  "runtime.defaultMsgTimeoutMs": 10000,
+  "runtime.destroyTimeoutMs": 5000,
+  "runtime.logLateResponses": false,
+  "runtime.sendRemoteExceptionStacks": true
+}

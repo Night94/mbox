@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create MBOX App"
+  short_description: "Create a spec-led runnable MBOX app"
+  default_prompt: "Use $create-mbox-app to create a new runnable app for this repository."

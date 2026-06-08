@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+**/models/kokoro-en-v0_19/
+impl/mbox-dotnet/apps/imap-test/application.json
+impl/mbox-dotnet/apps/single-mail-test/application.json
+impl/mbox-dotnet/apps/smtp-test/application.json
