@@ -16,5 +16,11 @@ window.MBOX_APPS = [
     name: "eve",
     color: "#58a6ff",
     script: "apps/eve/app.js"
+  },
+  {
+    id: "jen",
+    name: "jen",
+    color: "#f778ba",
+    script: "apps/jen/app.js"
   }
 ];

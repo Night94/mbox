@@ -64,6 +64,7 @@ Example apps include:
 - `john` - uses paid vision and retained pill targets to hunt visible pills.
 - `tim` - conserves momentum and reshapes into a perpendicular sweeping body.
 - `eve` - uses small survival pulses and reshapes into a blind sweeping net.
+- `jen` - uses paid vision, retained pill targets, and exl grabbing that drives through pills.
 
 The runnable browser realization starts at [`impl/web-pixel/index.html` on GitHub](https://github.com/Night94/mbox/blob/main/impl/web-pixel/index.html). When GitHub Pages is enabled for this repository, the running browser app is available at [https://night94.github.io/mbox/impl/web-pixel/index.html](https://night94.github.io/mbox/impl/web-pixel/index.html).
 

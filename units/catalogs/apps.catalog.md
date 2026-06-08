@@ -2,7 +2,7 @@
 mbox_unit: 1
 unit: apps
 type: catalog
-version: 4
+version: 5
 uses:
   catalog: 1
   autosort-refresh: 3
@@ -11,6 +11,7 @@ uses:
   eve: 6
   hello-world: 2
   imap-test: 21
+  jen: 1
   john: 12
   name-meaning: 2
   ollama-chat: 2
@@ -47,6 +48,8 @@ catalog:
     description: Shows a delayed hello-world message as a minimal display and runtime demonstration.
   - unit: imap-test
     description: Classifies and moves INBOX messages while displaying progress and results.
+  - unit: jen
+    description: Uses paid vision, retained visible-pill targets, targeted exl grabbing, and lane sweeping in the browser-hosted web-pixel world.
   - unit: john
     description: Uses paid vision, retained visible-pill targets, pill feedback, and targeted exl movement to chain hunts through visible pills with a field-sweeping fallback in the browser-hosted web-pixel world.
   - unit: name-meaning
